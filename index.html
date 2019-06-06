@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>我在东湖学院玩飞机</title>
+	<link href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+	<!-- 480*1700 -->
+	<div class="gameBox">
+		<div class="startDiv">
+			<img src="R/name.png" >
+			<button type="button" class="btnStart">开始游戏</button>
+		</div>
+		<!-- 在html5里面多了一个新的标签，这个标签可以在页面上当模拟屏幕，这样就可以模拟任何东西 -->
+		<canvas id="game" width="480" height="850"></canvas>
+		<!--游戏结束以后的div -->
+		<div class="endDiv">
+			<div class="top">飞机大战分数</div>
+			<div class="center">3000</div>
+			<div class="bottom">
+				<!--location.reload()重新加载当前页面，相当于刷新当前页面 -->
+				<button type="button" class="btnReStart" onclick="location.reload()">重新开始</button>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/index.js" type="module"></script>
+</html>
